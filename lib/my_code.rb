@@ -77,6 +77,17 @@ def reduce_to_all_true(source_array)
   return true
 end
 
-#def reduce_to_any_true
-#returns ture when a truthy value is present ||
+def reduce_to_any_true(source_array)
+  i = 0
+  
+  while i < source_array.length do
+    #returns true when a truthy value is present
+    if source_array[i]
+      return true
+    end
+    i += 1
+  end
 #returns false when no truthy value is present
+  return false
+
+end
